@@ -1,0 +1,103 @@
+
+.practice{
+    border:1.8px solid #18309a;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius:2px;
+    border-top: none;
+    border-top-right-radius: 21px;
+    border-top-left-radius: 21px;
+    margin-bottom:30px;
+}
+.practice div p{
+    text-align: justify;
+    font-family: math;
+}
+.practice h4{
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+    padding-bottom: 3px;
+    /* border-bottom: 2px solid rgb(8, 9, 9); */
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-top-right-radius: 13px;
+    border-top-left-radius: 13px;
+}
+.practice .btn-work{
+    margin:20px 0px 20px 0px;
+}
+.practice div .start-btn{
+    float: inline-end;
+    background-color: midnightblue;
+    border: none;
+    color: white;
+    /* border-radius: 3px; */
+    font-size: large;
+    font-weight: normal;
+    padding: 3px 25px 3px 25px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: all .5s;
+}
+.practice div .start-btn:hover{
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color:darkslateblue;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.practice div .view-btn{
+    background-color: midnightblue;
+    border: none;
+    color: white;
+    /* border-radius: 3px; */
+    font-size: large;
+    font-weight: normal;
+    padding: 3px 25px 3px 25px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+     border-top-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    transition: all .5s;
+}
+.practice div .view-btn:hover{
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color:darkslateblue;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.c-top-heading{
+    background-color: #101b75;
+    color: white;
+    border-radius: 2px;
+}
+.count-total-question{
+    background-color: #4c4c9b;
+    /* border-radius: 100%; */
+    width: 11px;
+    padding: 1px 5px 1px 5px;
+    color: white;
+    /* border:2px solid #04040c; */
+}
+@media (min-width:991px) and (max-width:1057px){
+    .multiple-questions h6{
+        font-size:20px;
+    }    
+}
+
+@media (min-width:772px) and (max-width:990px){
+    .multiple-questions h6{
+        font-size:15px;
+    } 
+}
+@media (min-width:552px) and (max-width:771px){
+    .multiple-questions h6{
+        font-size:12px;
+    } 
+}
+@media (min-width:300px) and (max-width:551px){
+    .multiple-questions h6{
+        font-size:10px;
+    } 
+}

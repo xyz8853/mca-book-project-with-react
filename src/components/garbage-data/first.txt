@@ -1,0 +1,177 @@
+    let [result1 , setResult1] = useState(false);
+    let [result2 , setResult2] = useState(false);
+    let [result3 , setResult3] = useState(false);
+    let [result4 , setResult4] = useState(false);
+
+
+    let [resultOption1, setResultOption1] = useState(false);
+    let [resultOption2, setResultOption2] = useState(false);
+    let [resultOption3, setResultOption3] = useState(false);
+    let [resultOption4, setResultOption4] = useState(false);
+
+    let option1 = (optionName, index,option1Value, currectOption)=>{
+        let rightResult = true;
+        let wrongResult = false;
+        setResultOption1(rightResult);
+        if(option1Value == currectOption){
+            setResult1(rightResult);
+        }else{
+            setResult1(wrongResult);
+        }
+    }
+
+    let option2 = (optionName, index,option2Value, currectOption)=>{
+        console.log('option2');
+        let rightResult = true;
+        let wrongResult = false;
+        setResultOption2(rightResult);
+        if(option2Value == currectOption){
+            setResult2(rightResult);
+        }else{
+            setResult2(wrongResult);
+        }
+    }
+
+    let option3 = (optionName, index,option3Value, currectOption)=>{
+        console.log('option3');
+        let rightResult = true;
+        let wrongResult = false;
+        setResultOption3(rightResult);
+        if(option3Value == currectOption){
+            setResult3(rightResult);
+        }else{
+            setResult3(wrongResult);
+        }
+    }
+
+    let option4 = (optionName, index,option4Value, currectOption)=>{
+        let rightResult = true;
+        let wrongResult = false;
+        setResultOption4(rightResult);
+        if(option4Value == currectOption){
+            setResult4(rightResult);
+        }else{
+            setResult4(wrongResult);
+        }
+        console.log('option4');
+    }
+
+    return(
+        <>
+            <div className="c-mcq">
+                <div className="questions">
+                {
+                    basic_mcq.map( (question, index)=>{
+                        
+                      return(
+                        <ul className="mcq-options" key={index}>
+                            <li><h4 className="mcq-question">{1+index}. {question.question}</h4></li>
+                            <ul className="options">
+                                <li className={
+                                    (resultOption1 == true)
+                                    ? 
+                                      (result1== index)? 'mcq-right' : 'mcq-wrong'
+                                    :
+                                    'option'
+
+                                }
+                                 onClick={()=>option1(`${'option1'}`,index,question.option1,question.currect)}>
+                                
+                                <input type="radio" name="option" id={'option1'+index}/> <label htmlFor={'option1'+index}> {question.option1}</label></li>
+                                <li className={
+                                    (resultOption2 == true)
+                                    ?
+                                        (result2 == true)? 'mcq-right' : 'mcq-wrong'
+                                    :
+                                    'option'
+
+                                } 
+                                
+                                onClick={()=>option2(`${'option2'}`,index,question.option2,question.currect)}><input type="radio" name="option" id={'option2'+index}/> <label htmlFor={'option2'+index}> {question.option2}</label></li>
+                                <li className={
+                                    (resultOption3 == true)
+                                    ?
+                                        (result3 == true)? 'mcq-right' : 'mcq-wrong'
+                                    :
+                                    'option'
+                                } 
+                                onClick={()=>option3(`${'option3'}`,index,question.option3,question.currect)}><input type="radio" name='option' id={'option3'+index}/> <label htmlFor={'option3'+index}> {question.option3}</label></li>
+                                <li className={
+                                    (resultOption4 == true)
+                                    ?
+                                        (result4 == true)? 'mcq-right' : 'mcq-wrong'
+                                    :
+                                    'option'
+                                } onClick={()=>option4(`${'option4'}`, index, question.option4, question.currect)}>
+                                    
+                                <input type="radio" name="option" id={'option4'+index}/> <label htmlFor={'option4'+index}> {question.option4}</label></li>
+                                <li className="mt-2"><button className="mcq-answer-button">Answer</button></li>
+                            </ul>  
+                        </ul>
+                      )
+                    })
+                }
+                </div>                
+            </div>
+        </>
+    )
+}
+
+let basic_mcq = [
+    {
+        question:"Variable valid declration",
+        option1:'int 1number;',
+        option2:'int int;' ,
+        option3:'int  max-age;',
+        option4:'int total_amount;',
+        currect:'int total_amount;'
+    },
+    {
+        question:'Choose the invalid keyword',
+        option1:'transient',
+        option2:'synchronized',
+        option3:'import',
+        option4:'goto',
+        currect:'goto'
+    },
+    {
+        question:'valid function declaration',
+        option1:'employee();',
+        option2:'public int employee();',
+        option3:'public int[] employee()',
+        option4:'char char employee();',
+        currect:'public int employee();'
+    },
+    {
+        question:'int data-type size in byte',
+        option1:'4 byte',
+        option2:'2 byte;',
+        option3:'1 byte',
+        option4:'None',
+        currect:'4 byte'
+    },
+    {
+        question:'Java language developer?',
+        option1:'Martin Richards',
+        option2:'Ken Thompson',
+        option3:'Dennis Ritchie',
+        option4:'James Gosling',
+        currect:'James Gosling'
+    },
+    {
+        question:'Java language developed in ?',
+        option1:'1994',
+        option2:'1990',
+        option3:'1894',
+        option4:'None',
+        currect:'1994'
+    },
+    {
+        question:'Java language which level of programming language?',
+        option1:'Low level',
+        option2:'Middle level',
+        option3:'High level',
+        option4:'4th generation',
+        currect:'High level'
+    },
+]
