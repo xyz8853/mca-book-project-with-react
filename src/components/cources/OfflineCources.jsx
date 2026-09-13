@@ -1,6 +1,8 @@
 import htmlLanguage from "../../img/html-language.jpg";
 import springBootLag from "../../img/springboot-language.png";
 import javaScriptLag from "../../img/javascript-language.png";
+import { all_offline_courses_lang } from "./all_offline_courses_lang";
+import { Link } from "react-router-dom";
 
 export default function OfflineCources(){
     return(
@@ -14,48 +16,28 @@ export default function OfflineCources(){
                     </div>
                 </div>
                 <div className="row justify-content-center mt-4">
-                    <div className="col-lg-3 col-md-3 col-sm-12 mb-3">
-                        <div className="c-language">
-                            <div className="card">
-                                <img src={htmlLanguage} className="card-img-top" alt="..."/>
-                                <div className="card-body">
-                                    <h5 className="card-title">HTML LANGUAGE</h5>
-                                    
-                                    <div className="text-center mt-5">
-                                        <a href="#" className="text-center">Apply</a>
+                    {
+                        all_offline_courses_lang.map((courses, index)=>{
+                        return(
+                        <div className="col-lg-3 col-md-3 col-sm-6 mb-3">
+                            <div className="c-language">
+                                <div className="card">
+                                    {/* <img src={htmlLanguage} className="card-img-top" alt="..."/> */}
+                                    {courses.img}
+                                    <div className="card-body">
+                                        <h5 className="card-title">{courses.courseName}</h5>
+                                        
+                                        <div className="text-center mt-5">
+                                            <Link className="text-center" to={courses.url}>Apply</Link>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>    
-                    </div>
-                    <div className="col-lg-3 col-md-3 col-sm-12 mb-3">
-                        <div className="java-language">
-                        <div className="card">
-                                <img src={springBootLag} className="card-img-top" alt="..."/>
-                                <div className="card-body">
-                                    <h5 className="card-title">SPRING BOOT</h5>
-                                    
-                                    <div className="text-center mt-5">
-                                        <a href="#" className="text-center">Apply</a>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>    
                         </div>
-                    </div>
-                    <div className="col-lg-3 col-md-3 col-sm-12 mb-3">
-                        <div className="react-language">
-                        <div className="card">
-                                <img src={javaScriptLag} className="card-img-top" alt="..."/>
-                                <div className="card-body">
-                                    <h5 className="card-title">JAVA SCRIPT</h5>
-                                    
-                                    <div className="text-center mt-5">
-                                        <a href="#" className="text-center">Apply</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        )
+                        })
+                    }
+                  
                 </div>
             </div>
         </section>

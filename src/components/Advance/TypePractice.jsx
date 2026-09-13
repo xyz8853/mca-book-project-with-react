@@ -71,7 +71,7 @@ export default function TypePractice() {
                             <img src={javaScript} alt="" />
                         </Link>
                     </a>
-                    <h3>Script Practice</h3>
+                    <h3>JavaScript Practice</h3>
                 </div>
             </div>
           </div>

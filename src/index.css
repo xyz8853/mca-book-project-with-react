@@ -678,3 +678,86 @@ p{
     padding-left:20px;
     color:chocolate;
 }
+
+
+/**
+
+/*======================
+    404 page
+=======================*/
+
+
+.page_404{ padding:40px 0; background:#fff; font-family: 'Arvo', serif;
+}
+
+.page_404  img{ width:100%;}
+
+.four_zero_four_bg{
+ 
+ background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+ }
+ 
+ 
+ .four_zero_four_bg h1{
+ font-size:80px;
+ }
+ 
+  .four_zero_four_bg h3{
+			 font-size:80px;
+			 }
+			 
+.link_404{			 
+	color: #fff!important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;}
+	.contant_box_404{ margin-top:-50px;
+}
+.shift-body {
+    background-color: #f6f9f9;
+    border-bottom: 3px solid #17A2C0;
+    border-radius: 5px
+}
+.join-button {
+    background-color: #17a2b8;
+    border-radius: 40px;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 7px 20px;
+}
+.shift-table .first-side {
+    font-family: "Nunito", sans-serif!important;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+.shift-table tr{
+    border-bottom: 2px solid #d9d7d7;
+    padding:20px 0px!important;
+    margin-bottom: 10px !important;
+}
+.shifting-sedual .card{
+    order: 2px solid black;
+}
+.popular-classes::after {
+    content: " ";
+    height: 2px;
+    width: 50px;
+    margin-top: 10px;
+    background: #17a2b8;
+    position: absolute;
+    margin-left: 5px;
+}
+.popular-classes::before {
+    content: " ";
+    height: 2px;
+    width: 50px;
+    margin-top: 10px;
+    background: #17a2b8;
+    position: absolute;
+    margin-left: -55px;
+}

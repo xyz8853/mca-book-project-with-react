@@ -77,6 +77,10 @@ import ElementAndTagPractice from './components/html_practice/html-topics-explai
 import FormAndInputPractice from './components/html_practice/html-topics-explains/FormAndInputPractice.jsx';
 import TableTagPractice from './components/html_practice/html-topics-explains/TableTagPractice.jsx';
 import BlockAndInlineElementsPractice from './components/html_practice/html-topics-explains/BlockAndInlineElementsPractice.jsx';
+import PageNotFound from './components/page_not_found/PageNotFound.jsx';
+import C_Online_Courses_Page from './components/c_online_courses/C_Online_Courses_Page.jsx';
+import JavaOnlineCoursesPage from './components/java_online_courses/JavaOnlineCoursesPage.jsx';
+import ReactOnlineCoursesPage from './components/react_online_courses/ReactOnlineCoursesPage.jsx';
 
 
 let allRouter = createBrowserRouter([
@@ -375,6 +379,22 @@ let allRouter = createBrowserRouter([
   {
     path:'html-embedding-media-practice',
     element:''
+  },
+  {
+    path:'c-language-all-online-courses-info',
+    element:<C_Online_Courses_Page></C_Online_Courses_Page>
+  },
+  {
+    path:'java-language-all-online-courses-info',
+    element:<JavaOnlineCoursesPage></JavaOnlineCoursesPage>
+  },
+  {
+    path:'react-language-all-online-courses-info',
+    element:<ReactOnlineCoursesPage></ReactOnlineCoursesPage>
+  },
+  {
+    path:'*',
+    element:<PageNotFound></PageNotFound>
   }
 ])
 createRoot(document.getElementById('root')).render(
