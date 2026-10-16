@@ -1,4 +1,4 @@
-import escapse_sequence from '../../img/escapse-sequence.WEBP' 
+import escapse_sequence from '../../img/escapse-sequence.webp' 
 
 
 export default function EscapeSequence(){
