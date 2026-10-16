@@ -1,4 +1,4 @@
-import if_img from '../../img/if.WEBP';
+import if_img from '../../img/if.webp';
 import if_else_img from '../../img/if-else3.png';
 import nested_if_else_img from '../../img/nested-if-else.png';
 import ladder_if_else_img from '../../img/ladder.jpg';
