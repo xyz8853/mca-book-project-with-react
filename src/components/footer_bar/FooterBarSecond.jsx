@@ -37,9 +37,9 @@ export default function FooterBarSecond(){
                         <div className="footer-col footer-about-me">
                             <h5>About Me</h5>
                             <ol className="footer-fa-icon">
-                                <li><i class="fa fa-phone" aria-hidden="true"></i> 8853292074</li>
+                                <li><i class="fa fa-phone" aria-hidden="true"></i> 7052621058</li>
                                 <li><i class="fa fa-envelope-o" aria-hidden="true"></i> ktejas8853@gmail.com</li>
-                                <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 8853292074</li>
+                                <li><i class="fa fa-whatsapp" aria-hidden="true"></i> 7052621058</li>
                                 <li><i class="fa fa-twitter" aria-hidden="true"></i> tejas@twiter</li>
                                 <li><i class="fa fa-location-arrow" aria-hidden="true"></i> prayagraj 12/45 </li>
                                 <li><i class="fa fa-university" aria-hidden="true"></i> NGBU@2024</li>
