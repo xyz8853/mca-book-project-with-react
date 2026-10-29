@@ -43,8 +43,8 @@ export default function JavaProgramming(){
            <Navbar></Navbar>
            <section className="c-language-section mt-5">
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-2 co-md-4 col-sm-12 heading-list-col">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-4 col-md-12 col-sm-12 heading-list-col">
                             <div className="c-language-headings">
                                 <ul className="heading-list">
                                     {
@@ -55,7 +55,7 @@ export default function JavaProgramming(){
                                 </ul>
                             </div>
                         </div>
-                        <div className="col-lg-8 col-md-8 col-sm-10 text-content">
+                        <div className="col-lg-8 col-md-8 col-sm-12 text-content">
                             <h2 className="active-content-heading">{JavaSyllabus[activeHeading].name}</h2>
                             <div className="change-heading-div">
                                 

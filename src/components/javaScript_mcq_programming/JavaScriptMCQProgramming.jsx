@@ -41,8 +41,8 @@ export default function JavaScriptMCQProgramming(){
             <Navbar></Navbar>
             <section className="c-language-section mt-5">
                 <div className="container-fluid">
-                    <div className="row">
-                        <div className="col-lg-2 col-md-4 col-sm-12 heading-list-col">
+                    <div className="row justify-content-center">
+                        <div className="col-lg-4 col-md-12 col-sm-12 heading-list-col">
                             <div className="c-language-headings">
                                 <ul className="heading-list">
                                     {
