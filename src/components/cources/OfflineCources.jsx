@@ -19,7 +19,7 @@ export default function OfflineCources(){
                     {
                         all_offline_courses_lang.map((courses, index)=>{
                         return(
-                        <div className="col-lg-3 col-md-3 col-sm-6 mb-3">
+                        <div className="col-lg-3 col-md-3 col-sm-6 mb-3" key={index}>
                             <div className="c-language">
                                 <div className="card">
                                     {/* <img src={htmlLanguage} className="card-img-top" alt="..."/> */}
